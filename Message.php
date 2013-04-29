@@ -279,6 +279,24 @@ class Message
 
         return $this;
     }
+    
+    /**
+     * Add per-recipient merge variable,
+     * which override global merge variables with the same name.
+     * 
+     * @param string @recipient
+     * @param array @vars (array=('name' => 'val1', 'content' => 'val2'))
+     * 
+     * @return Message
+     */
+    public function addMergeVarArray($recipient, $vars)
+    {
+        $this->mergeVars[] = array(
+                'rcpt' => $recipient,
+                'vars' => $vars,
+            );
+        return $this;
+    }
 
     /**
      * Add a string to tag the message with.
