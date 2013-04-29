@@ -1,5 +1,5 @@
 {
-    "name": "hipaway-travel/mandrill-bundle",
+    "name": "xstyled/mandrill-bundle",
     "type": "symfony-bundle",
     "description": "Symfony HipMandrillBundle",
     "keywords": ["Mandrill", "transaction mail", "transactional", "messages", "email"],
